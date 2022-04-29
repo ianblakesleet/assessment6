@@ -12,4 +12,7 @@ describe('shuffleArray should', () => {
         let result = shuffleArray(testarr);
         expect(result.join()).not.toEqual(testarr.join());
     })
+    test('check thaqt shuffleArray returns array', ()=>{
+        expect(Array.isArray(shuffleArray(testarr))).toBe(true)
+    })
 })
